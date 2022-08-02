@@ -1,11 +1,15 @@
 import React from 'react'
 
+
 const Counter=()=>{
-    const count=0;
+    let count=0;
+    const handleIncrement=() =>{
+        count++;
+    };
     return(
         <div>
             <p>The counter is: {count}</p>
-            <button>Increment</button>
+            <button onClick={handleIncrement}>Increment</button>
             <button>Decrement</button>
         </div>
     )
